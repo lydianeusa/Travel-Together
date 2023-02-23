@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+// CUSTOM HTML ELEMENTS
+
+body {
+    font-family: "Roboto-Regular";
+}
+
+// VARIABLES
+$blue: blue;
+
+
+// components
+
+.navbar-brand {
+width: 15%;
+}
+
+@mixin btn($bg, $color) {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: $bg;
+    border: 1px solid $bg;
+    color: $color;
+    border-radius: 10px;
+}
+
+.primary-btn {
+@include btn(orange,white);
+}
+
+.secondary-btn {
+    @include btn(black, white);
+}
+
+// header
+header nav {
+    background-color: white;
+}
+
+// section iphone
+#iphone {
+    display: flex;
+    align-items: center;
+    background-color: #e7816b;
+    border-radius: 20px;
+    color: white;
+    height: 50vh;
+    padding: 0px 40px;
+    margin: 20px 50px;
+
+
+
+    .left {
+
+        p {
+            padding: 20px 0px;
+        }
+
+        .btn {background-color: white;
+        color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        box-shadow: 1px 2px 10px 0
+        }
+    }
+
+    .right{display: flex;
+        justify-content: center;
+
+        .iphone{
+            width: 20%;
+        }
+    }
+}
+
+// section services
+.services {
+    display: flex;
+
+    .home {
+        color: white;
+        background-image: url(../img/homme-assis-batiment.jpg);
+        width: 40%;
+        height: 50vh;
+    }
+
+    .passport {
+        color: white;
+        background-image: url(../img/passport.jpg);
+        height: 20vh;
+    }
+
+    .montgolfiere {
+        color: white;
+        background-image: url(../img/montgolfiere.jpg);
+        height: 20vh;
+
+    }
+}
+// section features
+#features {
+    display: flex;
+}
+
+// section getInTouch
+
+// footer
+footer {
+    background-color: black;
+}
